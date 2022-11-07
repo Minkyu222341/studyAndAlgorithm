@@ -1,4 +1,4 @@
-package com.sparta.algorithm.result;
+package com.sparta.algorithm.result.programmers;
 
 public class _JadenCase문자열만들기 {
   public String solution(String request) {

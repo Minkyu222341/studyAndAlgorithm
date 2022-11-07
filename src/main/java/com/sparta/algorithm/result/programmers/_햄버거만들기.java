@@ -1,4 +1,4 @@
-package com.sparta.algorithm.result;
+package com.sparta.algorithm.result.programmers;
 
 class _햄버거만들기 {
   public int solution(int[] ingredient) {

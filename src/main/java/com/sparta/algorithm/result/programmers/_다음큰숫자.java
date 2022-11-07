@@ -1,4 +1,4 @@
-package com.sparta.algorithm.result;
+package com.sparta.algorithm.result.programmers;
 
 public class _다음큰숫자 {
 

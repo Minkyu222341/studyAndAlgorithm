@@ -1,4 +1,4 @@
-package com.sparta.algorithm.result;
+package com.sparta.algorithm.result.programmers;
 
 class _올바른괄호 {
   boolean solution(String strings) {

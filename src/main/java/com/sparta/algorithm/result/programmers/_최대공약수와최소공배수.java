@@ -1,4 +1,4 @@
-package com.sparta.algorithm.result;
+package com.sparta.algorithm.result.programmers;
 
 public class _최대공약수와최소공배수 {
   public int[] solution(int n, int m) {

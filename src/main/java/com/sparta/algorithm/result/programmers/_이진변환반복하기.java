@@ -1,4 +1,4 @@
-package com.sparta.algorithm.result;
+package com.sparta.algorithm.result.programmers;
 
 public class _이진변환반복하기 {
   public int[] solution(String s) {
