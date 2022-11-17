@@ -6,7 +6,7 @@ public class _피보나치수 {
         int first = 0;
         int second = 1;
         for (int i = 2; i <= n; i++) {
-            answer = first + second % 1234567;
+            answer = (first + second) % 1234567;
             if (i % 2 == 0) {
                 first =answer;
             } else {
