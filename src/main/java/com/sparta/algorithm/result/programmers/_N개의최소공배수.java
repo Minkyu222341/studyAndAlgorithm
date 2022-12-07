@@ -8,7 +8,6 @@ public class _N개의최소공배수 {
     int answer = arr[arr.length - 1];
     int count = 0;
 
-
     while (true) {
       for (int i : arr) {
         if (answer % i == 0) {

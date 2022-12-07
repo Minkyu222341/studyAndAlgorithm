@@ -9,7 +9,7 @@ public class _귤고르기 {
         HashMap<Integer, Integer> map = new HashMap<>();
         ArrayList<Integer> list = new ArrayList<Integer>();
         for (int i : tangerine) {
-            map.put(i,map.getOrDefault(i,0)+1);
+            map.put(i, map.getOrDefault(i, 0) + 1);
         }
         for (Integer integer : map.values()) {
             list.add(integer);
@@ -21,18 +21,13 @@ public class _귤고르기 {
         if (first >= k) {
             return 1;
         }
-
         for (int i = 0; i < list.size(); i++) {
             sum += list.get(i);
             answer++;
-            System.out.println(sum);
-            System.out.println(answer + "     answer");
             if (sum >= k) {
                 break;
             }
         }
-
-        System.out.println(answer);
         return answer;
     }
 
