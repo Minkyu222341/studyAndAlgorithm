@@ -22,6 +22,8 @@ public class _소수찾기 {
         answer++;
       }
     }
+
+    System.out.println(n);
       return answer;
     }
 
