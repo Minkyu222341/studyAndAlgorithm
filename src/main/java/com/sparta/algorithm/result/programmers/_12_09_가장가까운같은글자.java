@@ -6,7 +6,6 @@ public class _12_09_가장가까운같은글자 {
 
         String[] split = s.split("");
 
-        int now = 0;
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < split.length; i++) {
             if (!sb.toString().contains(split[i])) {
