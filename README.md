@@ -3,3 +3,4 @@
 * [스프링 디자인패턴이란?](https://github.com/Minkyu222341/algorithm/wiki/%EC%8A%A4%ED%94%84%EB%A7%81-%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4%EC%9D%B4%EB%9E%80-%3F)
 * [Spring? Spring Boot?](https://github.com/Minkyu222341/algorithm/wiki/Spring-%3F-Spring-boot-%3F)
 * [JVM이란 ?](https://github.com/Minkyu222341/algorithm/wiki/JVM%EC%9D%B4%EB%9E%80-%3F)
+* [DTO와VO](https://github.com/Minkyu222341/algorithm/wiki/DTO-VO)
