@@ -66,3 +66,5 @@ https://velog.io/@zidru/CICD%EC%9D%98-%EA%B8%B0%EB%B3%B8%EA%B0%9C%EB%85%90
 https://tecoble.techcourse.co.kr/post/2021-08-14-ci-cd/
 
 https://seosh817.tistory.com/104
+
+https://fe-developers.kakaoent.com/2022/220106-github-actions/
