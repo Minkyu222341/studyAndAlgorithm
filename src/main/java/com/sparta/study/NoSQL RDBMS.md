@@ -5,3 +5,5 @@
 ### SQL(Strucured Query Language)
 * 데이터베이스 관리 시스템의 데이터를 관리하기 위해 설계된 특수 목적의 프로그래밍 언어.
 
+# RDBMS(Relational DataBase Management System) - 관계형 데이터베이스 관리 시스템
+* 
