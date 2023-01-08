@@ -12,7 +12,7 @@ public class _01_03_마법의엘레베이터 {
                 storey += 1;
             } else {
                 answer += num;
-                if (num==5 && storey % 10 >= 5) {
+                if (num == 5 && storey % 10 >= 5) {
                     storey += 1;
                 }
             }
