@@ -19,8 +19,24 @@
 * 전세계의 수만은 개발자들과 전문가들이 오픈소스 개발에 참여하므로 독점 프로그래밍에 비해 안정적이다.
 
 ### Why PostgerSQL
+* 가장 넓은 영역의 ANSI SQL(SQL 표준준수)을 지원한다.
+  * 이는 가장 표준에 가깝게 발전하고 있다는 것을 의미하며, 다른 상용DBMS에서 postgreSQL로의 마이그레이션이 상대적으로 쉽다는 것을 뜻한다.
+    * ANSI SQL : DBMS(Oracle, My-SQL, DB2 등등)들에서 각기 다른 SQL를 사용하므로, 미국 표준 협회에서 이를 표준화하여 표준 SQL문을 정립 시켜 놓은 것이다.
+* 독창적인 자료형 및 문법
+  * 예로 전체 데이터의 부분집합에 대해서만 인덱스를 생성하는 Partial Index라는 기능이 있다.
+    * 특정 범위에 대해서만 인덱싱을 할 수 있기 때문에 특히 대량 데이터의 일부 값에 대해 인덱스를 생성할 경우, 인덱스 크기도 작고 관리하는 리소스도 줄일 수 있는 이점이 있다.
 
+### PostgreSQL 주의사항
+* UPDATE 쿼리에 약하다
+  * PostgreSQL UPDATE시 내부적으로는 새 행이 INSERT되고 이전 데이터는 삭제 표시가 된다. 
+  * 모든 인덱스에는 행의 실제 위치값에 대한 링크가 표기되어 있는데, 행이 업데이트되면 변경된 위치값에 대한 인덱스 정보도 업데이트가 필요하다. 
+  * 이런 과정 때문에 UPDATE시에는 MySQL보다 성능이 떨어진다.
 
+### 정리
+* 최근들어 빠른속도로 부상하고 있는 postgreSQL에 대하여 정말 가볍게 알아보았다.
+* 정리하자면 기본적인 CRUD는 사용 DBMS보다 성능이 뒤떨어지지만
+* 복잡한 쿼리, 대용량 처리 등에는 유리한 모습을 보인다는 것을 알 수 있다.
+* Insert, Select 위주의 서비스에 사용 된다면 성능, 비용 모든것을 가져 갈 수 있을듯 하다.
 
 ---
 https://codecamp.tistory.com/2
@@ -30,3 +46,7 @@ https://dataleader.tistory.com/34
 https://bitnine.tistory.com/516
 
 https://mangkyu.tistory.com/71
+
+https://www.youtube.com/watch?v=Ek7hskYF-x8
+
+https://techblog.woowahan.com/6550/
