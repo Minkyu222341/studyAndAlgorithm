@@ -55,3 +55,5 @@ https://code-lab1.tistory.com/51
 https://tecoble.techcourse.co.kr/post/2021-07-11-database-transaction/
 
 https://coding-factory.tistory.com/226
+
+https://hanamon.kr/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98%EC%9D%98-acid-%EC%84%B1%EC%A7%88/
