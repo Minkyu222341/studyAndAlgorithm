@@ -1,4 +1,4 @@
-package com.sparta.algorithm.result.programmers;
+package com.sparta.algorithm.result.programmers.lv1;
 
 import java.util.Arrays;
 
