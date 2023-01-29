@@ -1,4 +1,4 @@
-package com.sparta.algorithm.result.programmers;
+package com.sparta.algorithm.result.programmers.lv2;
 
 import java.util.HashMap;
 
