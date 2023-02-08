@@ -2,7 +2,7 @@ package com.sparta.algorithm.test;
 
 import java.util.*;
 
-public class Solution2 {
+public class ex3 {
     public int solution(int N, int[][] relation, String[] dirname) {
         int answer = 0;
         Arrays.sort(relation, (o1, o2) -> o1[0] - o2[0]);
@@ -23,7 +23,7 @@ public class Solution2 {
     }
 
     public static void main(String[] args) {
-        Solution2 solution2 = new Solution2();
+        ex3 solution2 = new ex3();
         solution2.solution(7, new int[][]{{1, 2}, {2, 5}, {2, 6}, {1, 3}, {1, 4}, {3, 7}, {7, 8}}, new String[]{"root", "abcd", "cs", "hello", "etc", "hello", "solution", "test"});
     }
 }

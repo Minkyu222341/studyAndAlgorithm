@@ -22,6 +22,5 @@ public class _02_01_소트인사이드 {
             sb.append(string);
         }
         System.out.println(sb);
-
     }
 }

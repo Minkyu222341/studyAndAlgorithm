@@ -1,6 +1,6 @@
 package com.sparta.algorithm.test;
 
-public class ok {
+public class ex1 {
     public String solution(int num) {
         StringBuilder sb = new StringBuilder();
         String numToString = String.valueOf(num);
@@ -16,7 +16,7 @@ public class ok {
 
 
     public static void main(String[] args) {
-        ok solution = new ok();
+        ex1 solution = new ex1();
         solution.solution(147);
     }
 }

@@ -2,7 +2,7 @@ package com.sparta.algorithm.test;
 
 import java.util.Arrays;
 
-public class Solution3 {
+public class ex4 {
     public int solution(int[] p) {
         int answer = 0;
 
@@ -21,7 +21,7 @@ public class Solution3 {
     }
 
     public static void main(String[] args) {
-        Solution3 solution3 = new Solution3();
+        ex4 solution3 = new ex4();
         solution3.solution(new int[]{3, 2, 1, 4, 5});
         solution3.solution(new int[]{20, 10, 10, 20});
 //        solution3.solution(new int[]{103, 101, 103, 103, 101, 102, 100, 100, 101, 104});
