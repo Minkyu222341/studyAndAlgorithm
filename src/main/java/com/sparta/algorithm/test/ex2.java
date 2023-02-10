@@ -13,6 +13,9 @@ public class ex2 {
 
         List<Integer> scoreKey = new ArrayList<>(scoreMap.keySet());
         scoreKey.sort((o1,o2) -> o2-o1);
+        for (Integer integer : scoreKey) {
+            System.out.println(integer);
+        }
         int rank = 1;
         for(int i=0; i<scoreKey.size(); i++){
             rankMap.put(scoreKey.get(i),rank);
@@ -22,9 +25,9 @@ public class ex2 {
             answer[i] = rankMap.get(grade[i]);
         }
 
-        for (int i : answer) {
-            System.out.println(i);
-        }
+//        for (int i : answer) {
+//            System.out.println(i);
+//        }
 
         return answer;
     }

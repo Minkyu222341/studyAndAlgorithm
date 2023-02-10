@@ -1,0 +1,5 @@
+동물보호소에서 이름에 EL이 들어가는 개를 이름순으로 조회하라.
+
+SELECT ANIMAL_ID as 식별번호, NAME as 이름 from ANIMAL_INS
+where ANIMAL_TYPE ='dog'and name like '%EL%'
+order by name;
