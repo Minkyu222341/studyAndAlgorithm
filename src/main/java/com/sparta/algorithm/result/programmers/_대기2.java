@@ -1,8 +1,6 @@
 package com.sparta.algorithm.result.programmers;
 
-import java.util.Arrays;
-
-public class Solution {
+public class _대기2 {
     public int[] solution(int[] numbers) {
         int[] answer = new int[numbers.length];
 
@@ -25,7 +23,7 @@ public class Solution {
     }
 
     public static void main(String[] args) {
-        Solution solution = new Solution();
+        _대기2 solution = new _대기2();
         solution.solution(new int[]{2,3,3,5});
     }
 }
