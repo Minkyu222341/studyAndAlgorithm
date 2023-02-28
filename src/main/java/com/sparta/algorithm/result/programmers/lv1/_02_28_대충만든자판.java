@@ -7,20 +7,14 @@ public class _02_28_대충만든자판 {
     int[] answer = new int[targets.length];
     HashMap<String, Integer> map = new HashMap<>();
 
-    for (int i = 0; i < keymap.length; i++) {
-      String[] split = keymap[i].split("");
-      for (int index = 0; index < split.length; index++) {
-        if (map.get(split[index])==null) {
-          map.put(split[index], index);
-        }
+    makeValidationMap(keymap, map);
 
-        if (map.get(split[index]) > index) {
-          map.put(split[index], index);
-        }
+    validation(targets, answer, map);
 
-      }
-    }
+    return answer;
+  }
 
+  private static void validation(String[] targets, int[] answer, HashMap<String, Integer> map) {
     for (int i = 0; i < targets.length; i++) {
       String[] split = targets[i].split("");
       int sum = 0;
@@ -33,8 +27,22 @@ public class _02_28_대충만든자판 {
         answer[i] = -1;
       }
     }
+  }
 
-    return answer;
+  private static void makeValidationMap(String[] keymap, HashMap<String, Integer> map) {
+    for (int i = 0; i < keymap.length; i++) {
+      String[] split = keymap[i].split("");
+      for (int index = 0; index < split.length; index++) {
+        if (map.get(split[index]) == null) {
+          map.put(split[index], index);
+        }
+
+        if (map.get(split[index]) > index) {
+          map.put(split[index], index);
+        }
+
+      }
+    }
   }
 
   public static void main(String[] args) {
