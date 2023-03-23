@@ -1,0 +1,9 @@
+SELECT 
+CONCAT('/home/grep/src/',ugb.board_id,'/',ugf.FILE_ID,ugf.file_name,ugf.file_ext) as FILE_PATH 
+from (SELECT *
+    FROM USED_GOODS_BOARD
+    ORDER BY VIEWS DESC
+    LIMIT 1) as ugb
+left join USED_GOODS_FILE as ugf
+on ugb.BOARD_ID = ugf.board_id
+order by ugf.file_id desc;
