@@ -1,0 +1,8 @@
+SELECT m.MEMBER_ID,m.MEMBER_NAME,m.GENDER,
+DATE_FORMAT(m.DATE_OF_BIRTH, "%Y-%m-%d") as DATE_OF_BIRTH
+from MEMBER_PROFILE as m 
+where m.gender ='W'
+and m.TLNO is not null
+and month(m.date_of_birth) =3
+order by m.member_id asc
+;
