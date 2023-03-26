@@ -1,0 +1,12 @@
+SELECT ugu.USER_ID,ugu.NICKNAME,
+CONCAT(ugu.city,' ',ugu.STREET_ADDRESS1,' ',ugu.STREET_ADDRESS2) as '전체주소',
+CONCAT(
+    LEFT(ugu.TLNO,3) ,'-', MID(ugu.TLNO,4,4) ,'-' , RIGHT(ugu.TLNO,4)
+) as '전화번호'
+from USED_GOODS_USER as ugu
+join USED_GOODS_BOARD as ugb
+on ugb.WRITER_ID = ugu.USER_ID
+GROUP BY ugu.USER_ID
+having count(ugu.user_id) > 2
+order by user_id desc
+;
