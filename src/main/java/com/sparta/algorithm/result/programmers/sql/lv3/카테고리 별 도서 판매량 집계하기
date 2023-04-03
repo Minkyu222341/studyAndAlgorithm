@@ -1,0 +1,7 @@
+select b.CATEGORY, SUM(SALES) AS TOTLA_SALES 
+FROM BOOK b
+left join BOOK_SALES s
+on b.BOOK_ID = s.BOOK_ID
+where s.sales_date BETWEEN '2022-01-01' AND '2022-01-31'
+group by b.CATEGORY
+order by b.category asc;
