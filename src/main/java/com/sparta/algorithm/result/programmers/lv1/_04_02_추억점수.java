@@ -1,5 +1,7 @@
+package com.sparta.algorithm.result.programmers.lv1;
+
 import java.util.*;
-class Solution {
+class _04_02_추억점수 {
     public int[] solution(String[] name, int[] yearning, String[][] photo) {
         int[] answer = new int[photo.length];
         Map<String,Integer> map = new HashMap<String,Integer>();

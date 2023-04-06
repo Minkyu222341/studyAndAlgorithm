@@ -1,4 +1,6 @@
-class Solution {
+package com.sparta.algorithm.result.programmers.lv2;
+
+class _03_15_124나라 {
     public String solution(int n) {
         StringBuilder str = new StringBuilder();
         switch(n){
