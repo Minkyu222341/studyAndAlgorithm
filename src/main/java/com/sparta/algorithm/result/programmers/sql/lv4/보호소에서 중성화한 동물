@@ -1,6 +1,7 @@
-SELECT ANIMAL_ID, ANIMAL_TYPE, NAME FROM ANIMAL_OUTS
-WHERE ANIMAL_ID IN (SELECT ANIMAL_ID FROM ANIMAL_INS
-WHERE SEX_UPON_INTAKE LIKE "%Intact%") &&
-(SEX_UPON_OUTCOME LIKE "%Spayed%" ||
- SEX_UPON_OUTCOME LIKE "%Neutered%")
- ORDER BY ANIMAL_ID
+-- 코드를 입력하세요
+# SELECT round(price / 10000) * 10000 as price_group ,
+select TRUNCATE(price/10000,0)*10000 as price_group,
+count(*) as count
+from PRODUCT  
+group by price_group
+order by price_group
