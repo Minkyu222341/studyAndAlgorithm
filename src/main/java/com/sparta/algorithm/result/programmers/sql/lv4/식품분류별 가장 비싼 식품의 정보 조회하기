@@ -1,0 +1,13 @@
+SELECT f.CATEGORY , max(f.price) as MAX_PRICE , 
+(select p.PRODUCT_NAME from FOOD_PRODUCT p where p.category = f.category order by p.price desc limit 1) as PRODUCT_NAME
+from FOOD_PRODUCT f 
+where category = '과자' or category = '국' or category = '김치'or category = '식용유'
+group by category 
+order by MAX_PRICE desc
+
+# select f.CATEGORY  , f.price ,
+# (select p.PRODUCT_NAME from FOOD_PRODUCT p where p.category = f.category order by p.price desc limit 1) as PRODUCT_NAME
+# from 
+# FOOD_PRODUCT f
+# where category = '과자' or category = '국' or category = '김치'or category = '식용유'
+# order by category , price desc
