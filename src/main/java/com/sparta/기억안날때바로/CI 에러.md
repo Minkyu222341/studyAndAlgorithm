@@ -32,6 +32,8 @@ Failed to compile.
 ```
 * 하여 위의 스크립트를 추가해주니 
 
+<br>
+
 ![image](https://github.com/Minkyu222341/studyAndAlgorithm/assets/108817236/2a2810eb-84d2-4847-84a7-a3f6611edabd)
 
 <br>
