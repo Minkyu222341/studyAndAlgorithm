@@ -1,0 +1,22 @@
+public class Main {
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    int X = sc.nextInt();
+
+    int stick = 64;
+    int count = 0;
+
+
+    while (stick > 0) {
+      if (stick > X) {
+        stick = stick / 2;
+      } else {
+        X = X - stick;
+        count++;
+      }
+    }
+
+    System.out.println(count);
+
+  }
+}
