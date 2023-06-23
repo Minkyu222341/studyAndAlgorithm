@@ -36,7 +36,7 @@
 ```
 * 우선 UserDetatilsService의 구현체를 필요한 만큼 만들어준다.
 
-  ```
+```
 @Service
 @RequiredArgsConstructor
 public class CustomAuthenticationProvider implements AuthenticationProvider {
@@ -89,7 +89,6 @@ public class CustomExamAuthenticationProvider implements AuthenticationProvider 
     return UsernamePasswordAuthenticationToken.class.isAssignableFrom(authentication);
   }
 }
-
 ```
 
 * 후에 각각의 구현체를 호출해줄 프로바이더를 생성해준다.
