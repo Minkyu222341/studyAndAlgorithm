@@ -26,6 +26,7 @@
     return userDetails;
   }
 ```
+<br>
 ```
 @Override
   public UserDetails loadUserByUsername(String loginId) throws UsernameNotFoundException {
@@ -66,7 +67,7 @@ public class CustomAuthenticationProvider implements AuthenticationProvider {
 }
 
   ```
-
+<br>
 ```
 @Service
 @RequiredArgsConstructor
