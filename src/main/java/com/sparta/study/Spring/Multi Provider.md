@@ -25,9 +25,7 @@
             .orElseThrow(() -> new UsernameNotFoundException("해당하는 유저를 찾을 수 없습니다."));
     return userDetails;
   }
-```
-<br>
-```
+
 @Override
   public UserDetails loadUserByUsername(String loginId) throws UsernameNotFoundException {
     UserDetails userDetails = exam2Repository.findByLoginId(loginId)
@@ -66,9 +64,6 @@ public class CustomAuthenticationProvider implements AuthenticationProvider {
   }
 }
 
-  ```
-<br>
-```
 @Service
 @RequiredArgsConstructor
 public class CustomExamAuthenticationProvider implements AuthenticationProvider {
