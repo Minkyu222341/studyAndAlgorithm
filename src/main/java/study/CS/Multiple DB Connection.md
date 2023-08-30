@@ -47,4 +47,25 @@
 * 스프링의 Bean관리 기본 전략은 싱글톤 패턴을 사용하기 때문에 아무런 설정없이 실행을 하게 된다면
 * 의존성 주입(Dependency Injection) 오류와 마주하게 될 것이다.
 * 이를 방지하기 위해서 설정 클래스파일을 만들어서 순차적으로 커넥션을 할수 있도록 해줄것이다.
- 
+
+### 폴더 구조
+![Config구조](https://github.com/Minkyu222341/studyAndAlgorithm/assets/108817236/e9e1b1d4-cf7b-4fc0-b228-d698b099a97f)
+
+### setUp
+![DBbaseConfig](https://github.com/Minkyu222341/studyAndAlgorithm/assets/108817236/3e50bd0f-7633-4ec3-93f8-68b10e148e61)
+
+* 위에서 말했던 의존성 관리 문제를 해결 하기위해서 @Primary 어노테이션을 작성해준다.
+  * @Primary : Spring에서 여러 개의 빈(Bean) 중에서 우선적으로 선택되는 기본 빈을 정의합니다
+* @Qualifier을 작성해서 주입받을 빈의 이름을 지정해준다.
+* HikariConfig 객체를 생성해서 yml파일에 작성한 DB의 정보를 임으로 설정해준다.
+
+<br>
+  
+![SecondaryConfig](https://github.com/Minkyu222341/studyAndAlgorithm/assets/108817236/462e3518-9bfb-42c0-9563-4fc44d928893)
+![PrimaryConfig](https://github.com/Minkyu222341/studyAndAlgorithm/assets/108817236/88ee66e3-6574-4dd2-96d6-db3405b1ef69)
+* 위 두 설정 파일은 SQL세션을 관리하기 위한 세션 팩토리의 구현체로 primarySqlSessionFactory를 생성 해준다.
+* 그후 스캔할 xml파일의 범위를 각각 지정해주어서 각각 임의대로 각 DB에 연결될수 있도록 설정해준다.
+
+## 결과
+![커넥션 로그](https://github.com/Minkyu222341/studyAndAlgorithm/assets/108817236/19b6c866-deaa-4f65-b6ac-0b36415bad03)
+* 어플리케이션을 실행 시켜보면 정상적으로 양쪽의 DB가 연결된걸 확인할 수 있다.
